@@ -1,3 +1,4 @@
+/*general style*/
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +7,15 @@
 }
 
 body {
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0;
 }
 
+/*header style*/
 header {
     text-align: center;
     padding: 1em, 2em;
@@ -27,4 +32,88 @@ header p {
     font-size: 1.2em;
     font-weight: 300;
     margin-bottom: 1.5em;
+}
+
+header nav {
+    margin-top: 1em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+header nav a:hover {
+    color: #ffdd57;
+}
+
+/* intro section*/
+.intro {
+    padding: 2em;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.intro p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/*buttons*/
+.buttons button {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 2em 0;
+}
+.buttons button {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.buttons button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
 }
