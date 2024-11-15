@@ -15,6 +15,8 @@ body {
     margin: 0;
 }
 
+
+
 /*header style*/
 header {
     text-align: center;
@@ -24,15 +26,15 @@ header {
 }
 
 h1 {
-    padding-top: 0.5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
     font-size: 2.5em;
-    margin-bottom: 0.2em;
 }
 
 header p {
     font-size: 1.2em;
     font-weight: 300;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 header nav {
@@ -51,6 +53,49 @@ header nav a:hover {
     color: #ffdd57;
 }
 
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+/* copied message*/
+#confirmation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1em 2em;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure it's above other content */
+    display: none; /* Initially hidden */
+}
+
+
+
 /* intro section*/
 .intro {
     padding: 2em;
@@ -67,67 +112,14 @@ header nav a:hover {
     color: #555;
 }
 
-/*buttons*/
-.buttons button {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin: 2em 0;
-}
-.buttons button {
-    padding: 0.75em 1.5em;
-    font-size: 1em;
-    color: #fff;
-    background-color: #0073e6;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.1s;
-}
 
-.buttons button:hover {
-    background-color: #005bb5;
-    transform: scale(1.05);
-}
 
-/* Footer Styling */
-footer {
-
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: #fff;
-    font-size: 0.9em;
-}
-
-footer a {
-    color: #ffdd57;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-footer a:hover {
-    color: #fff;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    .buttons {
-        flex-direction: column;
-    }
-}
-
+/*Major information*/
 .education-content {
-    max-width: 800px;
     margin: 2em auto;
     padding: 1em;
 }
 
-/* Section Styling for Each Degree */
 .education-section {
     background-color: #fff;
     border-radius: 8px;
@@ -157,33 +149,74 @@ footer a:hover {
     margin-bottom: 0.5em;
 }
 
-/* Footer Back to Home Link */
-footer p {
-    text-align: center;
-    padding: 1em 0;
+
+
+/* Row Styling */
+.row {
+    display: flex;
+    gap: 2em; /* Space between columns */
+    margin-bottom: 2em; /* Space between rows */
 }
 
-footer p a {
-    color: #0073e6;
-    text-decoration: none;
-}
 
-footer p a:hover {
-    text-decoration: underline;
-}
 
-#confirmation {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 1em 2em;
+/* Box Styling */
+.box {
+    flex: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    font-size: 1.1em;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Ensure it's above other content */
-    display: none; /* Initially hidden */
+    padding: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.box h3 {
+    color: #0073e6;
+    margin-bottom: 0.5em;
+}
+
+.box ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    color: #333;
+}
+
+.box ul li {
+    margin-bottom: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
