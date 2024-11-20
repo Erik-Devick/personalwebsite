@@ -155,7 +155,6 @@ footer a:hover {
 .row {
     display: flex;
     gap: 2em; /* Space between columns */
-    margin-bottom: 2em; /* Space between rows */
 }
 
 
