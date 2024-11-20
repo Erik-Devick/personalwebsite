@@ -154,13 +154,24 @@ footer a:hover {
 /* Row Styling */
 .row {
     display: flex;
-    gap: 2em; /* Space between columns */
+    gap: 2em;
+    margin-bottom: 2em;
 }
 
 
 
 /* Box Styling */
 .box {
+    flex: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counterBox {
+    max-width: fit-content;
     flex: 1;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -182,6 +193,15 @@ footer a:hover {
 
 .box ul li {
     margin-bottom: 0.5em;
+}
+
+
+#counter {
+    font-family: 'Roboto', Arial, sans-serif; /* Choose a clean, modern font */
+    font-size: 36px; /* Adjust size for emphasis */
+    font-weight: bold; /* Make it stand out */
+    color: #333; /* A vibrant green color */
+    letter-spacing: 1px; /* Space out letters slightly for readability */
 }
 
 
