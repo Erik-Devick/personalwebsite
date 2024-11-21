@@ -15,7 +15,11 @@ async function fetchLeetCodeStats() {
     const data = await response.json();
 
     // Update the counter
+    let rank = data.ranking
+    rank = Number(rank)
+    rank = rank.toLocaleString()
     document.getElementById('counter').innerText = data.totalSolved;
+    document.getElementById('rank').innerText = rank;
 }
 
 fetchLeetCodeStats()

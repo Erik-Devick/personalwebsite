@@ -170,16 +170,6 @@ footer a:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.counterBox {
-    max-width: fit-content;
-    flex: 1;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .box h3 {
     color: #0073e6;
     margin-bottom: 0.5em;
@@ -204,7 +194,21 @@ footer a:hover {
     letter-spacing: 1px; /* Space out letters slightly for readability */
 }
 
+#rank {
+    font-family: 'Roboto', Arial, sans-serif; /* Choose a clean, modern font */
+    font-size: 36px; /* Adjust size for emphasis */
+    font-weight: bold; /* Make it stand out */
+    color: #333; /* A vibrant green color */
+    letter-spacing: 1px; /* Space out letters slightly for readability */
+}
 
+.column {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+
+    gap: 2em;
+}
 
 
 
