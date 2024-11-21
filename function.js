@@ -11,10 +11,10 @@ function copyToClipboard(text) {
 }
 
 async function fetchLeetCodeStats() {
-    const response = await fetch(`https://leetcode-stats-api.herokuapp.com/erik_devick`);
+    const response = await fetch(`https://leetcode-api-faisalshohag.vercel.app/erik_devick`);
     const data = await response.json();
 
-    // Update the counter
+    console.log(data.rank)
     let rank = data.ranking
     rank = Number(rank)
     rank = rank.toLocaleString()
