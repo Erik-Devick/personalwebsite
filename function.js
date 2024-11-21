@@ -22,4 +22,6 @@ async function fetchLeetCodeStats() {
     document.getElementById('rank').innerText = rank;
 }
 
+//Doesnt work when going from projects to home
+
 fetchLeetCodeStats()
